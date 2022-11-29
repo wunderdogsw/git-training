@@ -1,8 +1,17 @@
 import React from "react";
 
+enum BikeStatus {
+  Sold,
+  Stolen,
+  PartiallyStolen,
+  NotYetStolen,
+  NotYetBought,
+}
+
 type Bike = {
   id: string;
   brand: string;
+  status: BikeStatus;
 };
 
 const Bikes: React.FC = () => {
@@ -11,7 +20,7 @@ const Bikes: React.FC = () => {
   return (
     <ul>
       {bikes.map((bike) => (
-        <li>{bike.brand}</li>
+        <li>{bike.brand} | {bike.status}</li>
       ))}
     </ul>
   );
