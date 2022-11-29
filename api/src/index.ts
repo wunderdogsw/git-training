@@ -1,10 +1,10 @@
 // This file contains the api
 
-import { getBikes } from "./bikes";
+import { getBike, getBikes } from "./bikes";
 
 const api = () => {
   const handlers: Function[] = [];
-  handlers.push(getBikes);
+  handlers.push(getBike, getBikes);
 
   console.log("The api is running...");
 };
