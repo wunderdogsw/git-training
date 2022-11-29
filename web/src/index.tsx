@@ -1,3 +1,9 @@
-import React from 'react'
+import React from "react";
+import { Bikes } from "./bikes";
 
-const App: React.FC = () => (<>The app</>)
+const App: React.FC = () => (
+  <>
+    <p>My bikes:</p>
+    <Bikes />
+  </>
+);
